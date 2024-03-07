@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/background-dark-mobile-new.png);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --sufarce-color: rgba(255, 255, 255, 0.05);
   --sufarce-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/background-light-mobile-new.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --sufarce-color: rgba(0, 0, 0, 0.05);
   --sufarce-color-hover: rgba(0, 0, 0, 0.02);
@@ -47,18 +47,34 @@ body * {
   padding: 24px;
 }
 
-#profile img {
+#profile div img {
+  width: 120px;
+  margin: auto;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+
+  border-radius: 50%;
+
+  display: flex;
+  padding: 3px;
+}
+
+#profile div img {
   width: 122px;
 }
 
-#profile p1 {
-  font-size: large;
+#profile h1 {
+  font-size: 18px;
   font-weight: 500;
   line-height: 24px;
 }
 
 #profile p {
-  font-size: smaller;
+  font-size: 14px;
   font-weight: 200;
   line-height: 24px;
 }
@@ -68,6 +84,7 @@ body * {
   position: relative;
   width: 64px;
   margin: 4px auto;
+  left: 50%;
 }
 
 #switch button {
@@ -76,7 +93,7 @@ body * {
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
-
+  
   position: absolute;
   top: 50%;
   left: 0;
@@ -119,7 +136,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 0;
+  padding: 1rem;
 }
 ul li a {
   display: flex;
@@ -138,6 +155,38 @@ ul li a {
   font-weight: 500;
 
   transition: background 0.2s;
+}
+
+ul li div {
+  background: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+}
+ul li div h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 24px 0px 24px;
+  font-size: 18px;
+  letter-spacing: 0.57px;
+  color: black;
+}
+
+ul li div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3px 24px 16px 24px;
+  font-size: 14px;
+  color: black;
 }
 
 /* pseudo-selector, quando passar mouse*/
@@ -162,7 +211,7 @@ ul li a:hover {
   justify-content: center;
   padding: 16px;
 
-  transition: background 0.2s;
+  transition: all 0.2s;
   border-radius: 50%;
 }
 
@@ -180,10 +229,10 @@ footer {
 /* midia queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/background-dark-new.png);
   }
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/background-light-new.png);
   }
 }
 
