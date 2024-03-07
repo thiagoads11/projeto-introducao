@@ -26,10 +26,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
+<br>
+<a href="https://thiagoads11.github.io/projeto-introducao/" target="_blank">🔗 [clique aqui para acessar ao projeto]</a> 
 
 ## 💻 Projeto
   O DevLinks é um agregador de links feito para ser ultilizado como cartão de visitas online.
 
 ---
 
-Feito com ♥ por Thiago Menezes.
+Feito por Thiago Menezes.
